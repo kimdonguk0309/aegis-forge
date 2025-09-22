@@ -1,0 +1,10 @@
+project Aegis_Build is
+   for Main use ("aegis_demo.adb");
+   for Source_Dirs use (".");
+   for Object_Dir use "obj";
+   for Exec_Dir use "bin";
+   for Target use "x86_64-w64-mingw32";
+   package Builder is
+      for Executable_Suffix use ".exe";
+   end Builder;
+end Aegis_Build;
